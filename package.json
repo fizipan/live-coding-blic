@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "A simple web app to help you learn about cultural diversity",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/styles/input.css -o ./dist/styles/output.css --watch"
   },
   "keywords": [],
   "author": "Budi Luhur IT Club",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",

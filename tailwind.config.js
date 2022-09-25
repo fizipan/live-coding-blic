@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"],
+        serif: ["Orbitron", "sans-serif"],
+      },
+      colors: {
+        "color-1": "#1A2C21",
+        "color-2": "#34A753",
+        "color-3": "#FD7B38",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
