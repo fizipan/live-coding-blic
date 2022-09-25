@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="sticky top-0 w-full py-6 lg:py-7">
+    <div class="sticky top-0 z-20 w-full bg-white py-6 lg:py-7">
       <header
         x-data="{ navbarMobileOpen: false }"
         class="mx-auto max-w-full px-4 lg:max-w-7xl"
@@ -140,5 +140,427 @@
         </ul>
       </header>
     </div>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="relative mt-14 lg:mt-20">
+        <!-- Hero Image -->
+        <div
+          class="hidden lg:absolute lg:top-0 lg:right-0 lg:block"
+          aria-hidden="true"
+        >
+          <img
+            src="./assets/images/hero-banner.png"
+            class="h-[410px] bg-cover bg-center object-cover object-center 2xl:h-[520px]"
+            alt="Hero Image"
+          />
+        </div>
+
+        <!-- Hero Description -->
+        <div class="relative mx-auto max-w-7xl px-4 lg:py-16 2xl:py-28">
+          <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="lg:col-span-6">
+              <!-- Label New -->
+              <h1 class="mb-2 text-xl font-bold lg:text-2xl">
+                Beragam <span class="text-color-2">budaya</span> satu
+                <span class="text-amber-800">nusantara</span>
+              </h1>
+              <h2 class="mb-4 text-5xl font-bold leading-tight lg:mb-6">
+                Republik Indonesia
+              </h2>
+              <p class="text-lg text-gray-500">
+                Kenali keragaman budaya yang dimiliki Indonesia dari berbagai
+                daerah dengan kesenian dan keunikannya. Tidak hanya keragaman
+                budaya, namun juga dengan destinasi wisata yang indah
+              </p>
+              <!-- End Label New -->
+
+              <!-- CTA Button -->
+              <div class="mt-8 grid flex-wrap gap-5 lg:flex">
+                <a
+                  href="#"
+                  class="flex items-center justify-center rounded-full bg-color-2 px-16 py-2 text-lg font-bold text-white"
+                >
+                  Jelajahi
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-center rounded-full border border-color-3 px-12 py-2 text-lg font-bold text-color-3"
+                >
+                  Hubungi kami
+                </a>
+              </div>
+              <!-- CTA Button -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+
+      <!-- Cultural -->
+      <section class="mt-40">
+        <div class="mx-auto max-w-7xl px-4">
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold lg:text-4xl">
+              Cultural Diversity
+            </h3>
+            <p class="mt-2 text-[#A7B0B5]">Keberagaman menyatukan Indonesia.</p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="mt-10 grid gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:gap-12"
+          >
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/Kepercayaan.png"
+                    alt="Kepercayaan"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Kepercayaan</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Indonesia memiliki keberagaman kepercayaan atau agama
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/budaya.png"
+                    alt="Budaya"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Budaya</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Budaya yang berbeda disetiap pulau di Indonesia yang juga
+                beragam
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/kuliner.png"
+                    alt="Kuliner"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Kuliner</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Makanan khas yang menggugah selera bagi penimat kunlier
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/kesenian.png"
+                    alt="Kesenian"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Kesenian</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Setiap daerah juga memiki ciri khas kesenian masing-masing
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/lagu-daerah.png"
+                    alt="Lagu daerah"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Lagu daerah</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Beragam lagu daerah juga dimiliki oleh Indonesia
+              </p>
+            </div>
+            <div
+              class="rounded-2xl bg-white py-8 px-7 shadow-md transition hover:shadow-2xl"
+            >
+              <div class="flex items-center space-x-4">
+                <div class="relative w-14 rounded-lg bg-gray-200 p-2">
+                  <img
+                    src="./assets/images/alat-musik.png"
+                    alt="Alat Musik"
+                    class="w-full"
+                  />
+                </div>
+                <h5 class="text-lg font-semibold">Alat Musik</h5>
+              </div>
+              <p class="mt-4 text-[#AFAEC3]">
+                Berbagai macam alat musik tradisional setiap daerah
+              </p>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+      </section>
+      <!-- End Cultural -->
+
+      <!-- Destinasi Wisata -->
+      <section class="relative mt-40 pt-28">
+        <div
+          class="rectangle-path absolute inset-0 -z-10 w-full bg-color-2"
+        ></div>
+        <div class="mx-auto max-w-7xl px-4">
+          <h3 class="text-2xl font-semibold text-white lg:text-4xl">
+            Destinasi Wisata
+          </h3>
+          <p class="mt-2 text-gray-300">Keberagaman pesona wisata Indonesia</p>
+
+          <!-- Card -->
+          <div class="mt-10 grid gap-12 lg:grid-cols-3 lg:gap-10">
+            <a href="#" class="group">
+              <div
+                class="relative z-10 w-full overflow-hidden rounded-2xl lg:h-[470px]"
+              >
+                <img
+                  src="/src/assets/images/borobudur.jpg"
+                  class="h-full w-full bg-center bg-no-repeat object-cover object-center"
+                  alt="Borobudur"
+                />
+                <div
+                  class="absolute inset-0 flex flex-col items-center justify-around bg-black bg-opacity-50 px-12 py-6 text-center opacity-0 transition-all ease-in group-hover:opacity-100"
+                >
+                  <h6 class="text-2xl font-bold uppercase text-white">
+                    CANDI BOROBUDUR
+                  </h6>
+                  <p class="text-lg text-white">
+                    Candi Borobudur, yang merupakan Candi Buddha terbesar di
+                    dunia dan sebagai warisan budaya Indonesia
+                  </p>
+                  <span
+                    class="flex items-center justify-center rounded-full border border-color-3 px-12 py-2 text-lg font-bold text-color-3"
+                  >
+                    Lihat Lengkap
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="group">
+              <div
+                class="relative z-10 w-full overflow-hidden rounded-2xl lg:h-[470px]"
+              >
+                <img
+                  src="/src/assets/images/prambanan.jpg"
+                  class="h-full w-full bg-center bg-no-repeat object-cover object-center"
+                  alt="Prambanan"
+                />
+                <div
+                  class="absolute inset-0 flex flex-col items-center justify-around bg-black bg-opacity-50 px-12 py-6 text-center opacity-0 transition-all ease-in group-hover:opacity-100"
+                >
+                  <h6 class="text-2xl font-bold uppercase text-white">
+                    CANDI PRAMBANAN
+                  </h6>
+                  <p class="text-lg text-white">
+                    Candi Prambanan merupakan candi Hindu yang terbesar di
+                    Indonesia.
+                  </p>
+                  <span
+                    class="flex items-center justify-center rounded-full border border-color-3 px-12 py-2 text-lg font-bold text-color-3"
+                  >
+                    Lihat Lengkap
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="group">
+              <div
+                class="relative z-10 w-full overflow-hidden rounded-2xl lg:h-[470px]"
+              >
+                <img
+                  src="/src/assets/images/pura-bersakih.jpg"
+                  class="h-full w-full bg-center bg-no-repeat object-cover object-center"
+                  alt="Doctor 1"
+                />
+                <div
+                  class="absolute inset-0 flex flex-col items-center justify-around bg-black bg-opacity-50 px-12 py-6 text-center opacity-0 transition-all ease-in group-hover:opacity-100"
+                >
+                  <h6 class="text-2xl font-bold uppercase text-white">
+                    PURA BESAKIH
+                  </h6>
+                  <p class="text-lg text-white">
+                    Besakih adalah sebuah komplek pura yang terletak di Desa
+                    Besakih, Bali, Indonesia
+                  </p>
+                  <span
+                    class="flex items-center justify-center rounded-full border border-color-3 px-12 py-2 text-lg font-bold text-color-3"
+                  >
+                    Lihat Lengkap
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- End Card -->
+        </div>
+      </section>
+      <!-- End Destinasi Wisata -->
+
+      <!-- Tentang Kami -->
+      <section class="mt-40">
+        <div class="mx-auto max-w-7xl px-4">
+          <div class="text-center">
+            <h3 class="text-2xl font-semibold lg:text-4xl">Siapa Kami?</h3>
+            <h4 class="mt-2 text-[#A7B0B5]">
+              Insan-insan penerus generasi bangsa
+            </h4>
+            <p class="mt-8">
+              Kami adalah insan-insan penerus generasi bangsa yang akan membawa
+              dan terus membanggakan negara Republik Indonesia dengan cara
+              memperkenalkan kepada dunia apa itu Nusantara dan apa saja yang
+              menjadi ciri khas dan keunikan hingga kekayaan alam yang dimiliki
+              oleh Indonesia dari Sabang-Merauke, yang kita sebut sebagai
+              Nusantara
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang Kami -->
+
+      <!-- Kontak Kami -->
+      <section class="relative my-40">
+        <div class="lg:absolute lg:inset-0">
+          <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img
+              class="h-56 w-full object-cover lg:absolute lg:h-full"
+              src="./assets/images/map.jpg"
+              alt="Map"
+            />
+          </div>
+        </div>
+        <div
+          class="relative py-16 px-4 sm:py-24 sm:px-6 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32"
+        >
+          <div class="lg:pr-8">
+            <div class="mx-auto max-w-md sm:max-w-lg lg:mx-0">
+              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                Kontak Kami
+              </h2>
+              <p class="mt-4 text-lg text-gray-500 sm:mt-3">
+                Hubungi kami untuk informasi lebih lanjut
+              </p>
+              <form
+                action="#"
+                method="POST"
+                class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+              >
+                <div>
+                  <label
+                    for="nama-depan"
+                    class="block text-sm font-medium text-gray-700"
+                    >Nama Depan</label
+                  >
+                  <div class="mt-1">
+                    <input
+                      type="text"
+                      name="nama-depan"
+                      id="nama-depan"
+                      autocomplete="given-name"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-color-2 focus:ring-color-2 sm:text-sm"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="nama-belakang"
+                    class="block text-sm font-medium text-gray-700"
+                    >Nama Belakang</label
+                  >
+                  <div class="mt-1">
+                    <input
+                      type="text"
+                      name="nama-belakang"
+                      id="nama-belakang"
+                      autocomplete="family-name"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-color-2 focus:ring-color-2 sm:text-sm"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700"
+                    >Email</label
+                  >
+                  <div class="mt-1">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-color-2 focus:ring-color-2 sm:text-sm"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <div class="flex justify-between">
+                    <label
+                      for="pesan-anda"
+                      class="block text-sm font-medium text-gray-700"
+                      >Pesan anda</label
+                    >
+                  </div>
+                  <div class="mt-1">
+                    <textarea
+                      id="pesan-anda"
+                      name="pesan-anda"
+                      aria-describedby="pesan-anda-description"
+                      rows="4"
+                      class="block w-full resize-none rounded-md border-gray-300 shadow-sm focus:border-color-2 focus:ring-color-2 sm:text-sm"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="text-right sm:col-span-2">
+                  <button
+                    type="submit"
+                    class="inline-flex justify-center rounded-md border border-transparent bg-color-2 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-color-2 focus:ring-offset-2"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Kontak Kami -->
+    </main>
+    <!-- End Main -->
+
+    <!-- footer -->
+    <footer class="bg-color-1">
+      <div class="max-w-7xl mx-auto py-5 px-4 overflow-hidden">
+        <p class="text-center text-base text-white">
+           Copyrights &copy; Cultural Diversity 2022 | Powered by Budi Luhur Information Technology Club
+        </p>
+      </div>
   </body>
 </html>
