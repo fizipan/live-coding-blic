@@ -4,7 +4,7 @@
   "description": "A simple web app to help you learn about cultural diversity",
   "scripts": {
     "dev": "postcss ./src/styles/input.css -o ./dist/styles/output.css --watch",
-    "build": "postcss ./src/styles/input.css -o ./dist/styles/output.css"
+    "build:css": "postcss ./src/styles/input.css -o ./dist/styles/output.css"
   },
   "keywords": [],
   "author": "Budi Luhur IT Club",
