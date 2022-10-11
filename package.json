@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A simple web app to help you learn about cultural diversity",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/styles/input.css -o ./dist/styles/output.css --watch"
+    "dev": "postcss ./src/styles/input.css -o ./dist/styles/output.css --watch",
+    "build": "postcss ./src/styles/input.css -o ./dist/styles/output.css"
   },
   "keywords": [],
   "author": "Budi Luhur IT Club",
@@ -11,7 +12,9 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.16",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8"
